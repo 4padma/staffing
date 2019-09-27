@@ -3,8 +3,12 @@ import ReactDOM from "react-dom";
 import ReactDataGrid from "react-data-grid";
 import createRowData from "./createRowData";
 import { Data } from "react-data-grid-addons";
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.min.js';
+// import 'jquery/src/jquery.js';
+// import { Container, Row } from 'react-bootstrap';
 import "./styles.css";
+// import Header from './Header';
 
 const defaultColumnProperties = {
     width: 160
@@ -76,15 +80,19 @@ function Example({ rows }) {
     const [state, setState] = useState({ expandedRows: {}, rows });
     const visibleRows = Data.Selectors.getRows(state);
     return (
+        // <Card style={{ width: '65rem', height: '10rem' }}>
+        //     <Card.Body>
         <div>
-            <ReactDataGrid
-                columns={columns}
-                rowGetter={i => visibleRows[i]}
-                rowsCount={visibleRows.length}
-                minHeight={550}
-                getSubRowDetails={getSubRowDetails(state.expandedRows)}
-                onCellExpand={args => setState(onCellExpand(args))}
-            />
+            <div>
+                <ReactDataGrid
+                    columns={columns}
+                    rowGetter={i => visibleRows[i]}
+                    rowsCount={visibleRows.length}
+                    minHeight={350}
+                    getSubRowDetails={getSubRowDetails(state.expandedRows)}
+                    onCellExpand={args => setState(onCellExpand(args))}
+                />
+            </div>
         </div>
     );
 }

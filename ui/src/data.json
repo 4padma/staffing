@@ -1,0 +1,48 @@
+[
+    {
+        "directorName": "D1",
+        "directorId": "1",
+        "noOfOpenedPositions": 20,
+        "noOfOfferedReleasedPositions": 10,
+        "noOfClosedPositions": 5,
+        "managers": [
+            {
+                "managerName": "M1",
+                "managerId": "1",
+                "noOfOpenedPositions": 10,
+                "noOfOfferedReleasedPositions": 5,
+                "noOfClosedPositions": 2
+            },
+            {
+                "managerName": "M2",
+                "managerId": "2",
+                "noOfOpenedPositions": 10,
+                "noOfOfferedReleasedPositions": 5,
+                "noOfClosedPositions": 3
+            }
+        ]
+    },
+    {
+        "directorName": "D2",
+        "directorId": "2",
+        "noOfOpenedPositions": 20,
+        "noOfOfferedReleasedPositions": 10,
+        "noOfClosedPositions": 5,
+        "managers": [
+            {
+                "managerName": "M1",
+                "managerId": "1",
+                "noOfOpenedPositions": 10,
+                "noOfOfferedReleasedPositions": 5,
+                "noOfClosedPositions": 2
+            },
+            {
+                "managerName": "M2",
+                "managerId": "2",
+                "noOfOpenedPositions": 10,
+                "noOfOfferedReleasedPositions": 5,
+                "noOfClosedPositions": 3
+            }
+        ]
+    }
+]
